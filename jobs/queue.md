@@ -27,3 +27,9 @@ The user hears no sound in exports/paul-barnabas-mark_EN.mp4 / _HI.mp4. The audi
 2. Re-mux EN + HI with the new step 3 in WORKER.md (system ffmpeg, -c:a aac re-encode, explicit -map). Check that mean_volume is about -17 dB for both.
 3. Use the same new mux for 003 and 004. If either was already muxed the old way, re-mux it.
 4. Tell the user to play exports\paul-barnabas-mark_EN.mp4 (NOT the silent picture-only file in out\).
+
+## 006 - Noah re-render (fix: empty field at 49.7-51.4 s)
+src/videos/noah/world.ts now shows the room set on "but the handle is on your side" (was an empty green field).
+- comp: NoahShort   name: noah-the-door   extra: --scale=1.3333333333333333
+- new mux (WORKER.md step 3) + volume check, contact sheet, replace the files in FINAL VIDEOS\ ("Noah and the Door - ENGLISH/HINDI.mp4").
+- Do this after 004 finishes.
