@@ -41,4 +41,10 @@ WORKER READY os=Windows 11 Home 10.0.26300 gpu=NVIDIA GeForce RTX 4060 Laptop GP
   REGRESSION: the last shots (~t=66-71 s, sheet row 6 cols 4-6) are almost black. The door, wall and floor are dark navy; only the gold handle and the light strip at the bottom are visible. In the first render (job 003) the same shots were bright (brown door, white brick wall, handle).
   Before/after at t=60/64/68/71 s: reports/noah_006_end_regression.png (top row = old job-003 render, bottom row = new). t=60 and 64 are the same in both; 68 and 71 are the dark ones.
   Because of this, FINAL VIDEOS\ still holds the OLD Noah files (with the empty-field shot). The new files are in exports\ only. Waiting for the planner to fix the lighting (probably the world.ts change) and queue a new job.
-- Next: job 007 (Cain re-render) is rendering now; I will compare it frame by frame against the old Cain at the same timestamps.
+- DONE 007 cain-and-abel (re-render): duration=75.30s res=1440x2560, render_min~13.8, sheet=reports/cain-and-abel_sheet.jpg (new). Mux: EN mean -18.1 dB / max -1.0; HI mean -17.0 dB / max -1.1.
+  Compared old (FINAL VIDEOS, job 004) vs new at t=3, 5, 12, 35, 36, 52, 62, 74 s:
+  - t=5 s FIXED: camera now pushes onto Cain at his brick altar (was empty ground).
+  - t=35-36 s FIXED: Abel's close-up now has the altar/hills set behind him (was the washed-out set). A faint ghost of trees is visible at t=35, which looks like the dissolve in progress.
+  - t=3, 12, 52, 62, 74 s identical to the old render. No new regressions, no black frames.
+  Replaced "Cain and Abel - ENGLISH/HINDI.mp4" in FINAL VIDEOS\ with the new files.
+- Next: job 008 (Noah re-render, replaces 006) is rendering now. Old Noah (job 003) in FINAL VIDEOS\ is the comparison baseline and stays until 008 is verified at t=50, 60, 64, 68, 71 s.
