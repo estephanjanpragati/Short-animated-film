@@ -133,7 +133,7 @@ const zoom = (o: V3, pos: V3, look: V3, fov: number, k: number, rest: Partial<Ca
 // ---- framings ----
 const fr = (id: number) => SHOTS[id - 1].a;
 const S1a = (f: number) => dolly(ALT, [0, 1.7, 13], [0, 1.2, 0], pushK(f, 0, 0.0028), { fov: 44 });
-const S1b = (f: number) => dolly(ALT, [0.2, 1.6, 8.2], [0, 1.3, 0.5], pushK(f, W("one of them"), 0.002, 0.006, 30), { fov: 42, roll: -0.04 });
+const S1b = (f: number) => dolly(ALT, [-1.0, 1.6, 8.6], [-2.3, 1.3, 0.4], pushK(f, W("one of them"), 0.002, 0.006, 30), { fov: 42, roll: -0.04 });
 const S2a = (f: number) => dolly(FARM, [1.6, 1.6, 6.2], [0, 1.2, 0], pushK(f, fr(2), 0.0025), { fov: 40 });
 const S2b = (f: number) => dolly(PAST, [-1.6, 1.6, 6.2], [0, 1.2, 0], pushK(f, W("his little brother"), 0.0025), { fov: 40 });
 const S3a = (f: number) => dolly(ALT, [1.0, 3.0, 19], [0, 1.0, 4], pushK(f, fr(3), 0.002), { fov: 48 });

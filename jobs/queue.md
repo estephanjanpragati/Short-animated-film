@@ -33,3 +33,9 @@ src/videos/noah/world.ts now shows the room set on "but the handle is on your si
 - comp: NoahShort   name: noah-the-door   extra: --scale=1.3333333333333333
 - new mux (WORKER.md step 3) + volume check, contact sheet, replace the files in FINAL VIDEOS\ ("Noah and the Door - ENGLISH/HINDI.mp4").
 - Do this after 004 finishes.
+
+## 007 - Cain re-render (2 fixes)
+- story.ts S1b: on "one of them ended up killing the other" (~4 s) the camera now pushes onto Cain at his altar (was empty ground).
+- world.ts: on "the bible says" (~35 s) Abel's close-up now shows the altars set behind him (was the wrong, washed-out set).
+- comp: CainShort   name: cain-and-abel   extra: --scale=1.3333333333333333
+- new mux + volume check, contact sheet, replace "Cain and Abel - ENGLISH/HINDI.mp4" in FINAL VIDEOS\. Do this after 006.

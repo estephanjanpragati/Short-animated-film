@@ -11,7 +11,7 @@ import { LIGHTS, LOOK, LightPreset } from "./lights";
 import { TONE, CHAR, LFB, twoTone, untone } from "./shade";
 import { NOINK } from "./ink";
 import { Pool, Actor, Fx, stage } from "./cast";
-import { FPS, SHOTS, ShotDef, camAt, V3, ALT, FARM, PAST, TAB, KIT, HUT, HILLX, CAIN_ALT, ABEL_ALT, beamOn, T } from "./story";
+import { FPS, SHOTS, ShotDef, camAt, V3, ALT, FARM, PAST, TAB, KIT, HUT, HILLX, CAIN_ALT, ABEL_ALT, beamOn, T, W } from "./story";
 
 type Mats = Record<string, THREE.Material>;
 const discTex = () => ctex("sunDisc", 128, 128, (g) => {
@@ -484,7 +484,9 @@ export class World {
     Wu.wShade.value.set(...wc.shade); Wu.wTime.value = t;
     // ---- props that move or appear per shot ----
     const SETG: Record<string, string> = { altars: "altars", fields: "fields", tab: "tab", kitchen: "kitchen", hut: "hut", dusk: "altars", cross: "cross" };
-    for (const [n, g] of Object.entries(this.groups)) g.visible = n === SETG[s.set];
+    // shot 11 cuts to Abel at his altar on "the bible says" (camera S11c): show the altars set from that frame on
+    const setNow = id === 11 && f >= W("the bible says") ? "altars" : s.set;
+    for (const [n, g] of Object.entries(this.groups)) g.visible = n === SETG[setNow];
     const staff = this.groups.altars?.getObjectByName("staff"); if (staff) staff.visible = id >= 15 && id <= 18 && !(id === 15 && t < T("and kills him"));
     (this.beam.material as THREE.MeshBasicMaterial).opacity = 0.32 * beamOn(id, t); this.beam.visible = beamOn(id, t) > 0.01;
     if (s.set === "kitchen" || s.set === "hut") { this.fog.near = 30; this.fog.far = 200; }
