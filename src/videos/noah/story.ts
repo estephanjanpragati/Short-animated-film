@@ -173,7 +173,7 @@ const CAMS: Record<number, Key[]> = {
   9: [{ f: fr(9), s: S9a }],
   10: [{ f: fr(10), s: S10a }],
   11: [{ f: fr(11), s: S11a }],
-  12: [{ f: fr(12), s: S12a }, { f: W("but the handle"), cut: true, s: S12b }],
+  12: [{ f: fr(12), s: S12a }], // (the room cut on "but the handle" left the room set in this canvas and darkened shot 16; the handle close-up is shot 16)
   13: [{ f: fr(13), s: S13a }, { f: W("if anyone hears"), cut: true, s: S13b }],
   14: [{ f: fr(14), s: S14a }, { f: W("has no handle") - 8, dur: 36, s: S14b }],
   15: [{ f: fr(15), s: S15a }],
@@ -203,7 +203,6 @@ export const dofAt = (f: number): { cInf: number; focus?: (f: number) => V3 } =>
   if (id === 5 && f >= W("two by two")) c = 10;
   if (id === 7 && f >= W("the lord shut")) c = 11;
   if (id === 13 && f >= W("if anyone hears")) c = 13;
-  if (id === 12 && f >= W("but the handle")) c = 13;
   return { cInf: c };
 };
 

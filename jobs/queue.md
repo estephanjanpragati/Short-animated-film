@@ -39,3 +39,10 @@ src/videos/noah/world.ts now shows the room set on "but the handle is on your si
 - world.ts: on "the bible says" (~35 s) Abel's close-up now shows the altars set behind him (was the wrong, washed-out set).
 - comp: CainShort   name: cain-and-abel   extra: --scale=1.3333333333333333
 - new mux + volume check, contact sheet, replace "Cain and Abel - ENGLISH/HINDI.mp4" in FINAL VIDEOS\. Do this after 006.
+
+## 008 - Noah re-render (replaces 006, which darkened the final room shots)
+Shot 12 no longer cuts to the room: the friend keeps knocking in the rain through "but the handle is on your side"
+(world.ts room-visibility change reverted; story.ts / cast.ts keep shot 12 on the cottage).
+- comp: NoahShort   name: noah-the-door   extra: --scale=1.3333333333333333
+- Compare t=50, 60, 64, 68, 71 s with the OLD 003 render. Ends must be bright (brown door, white brick); ~50 s must show the friend at the door (not an empty field).
+- If OK: new mux + volume check, sheet, replace "Noah and the Door - ENGLISH/HINDI.mp4" in FINAL VIDEOS\.

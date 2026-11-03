@@ -11,7 +11,7 @@ import { LIGHTS, LOOK, LightPreset } from "./lights";
 import { TONE, CHAR, LFB, twoTone, untone } from "./shade";
 import { NOINK } from "./ink";
 import { Pool, Actor, Fx, stage } from "./cast";
-import { FPS, SHOTS, ShotDef, camAt, V3, ARK, HILL, FEAST, COT, JDOOR, ROOM, DOOR_X, DOOR_Z, DOOR_Y, DOOR_W, DOOR_H, doorShut, waterY, arkLift, T, W } from "./story";
+import { FPS, SHOTS, ShotDef, camAt, V3, ARK, HILL, FEAST, COT, JDOOR, ROOM, DOOR_X, DOOR_Z, DOOR_Y, DOOR_W, DOOR_H, doorShut, waterY, arkLift, T } from "./story";
 
 type Mats = Record<string, THREE.Material>;
 const discTex = () => ctex("sunDisc", 128, 128, (g) => {
@@ -531,9 +531,7 @@ export class World {
     Wu.wShade.value.set(...wc.shade); Wu.wTime.value = t;
     // ---- props that move or appear per shot ----
     const SETG: Record<string, string> = { ark: "ark", hill: "ark", feast: "feast", flood: "ark", cottage: "cottage", jdoor: "jdoor", room: "room" };
-    // shot 12 cuts to the room interior on "but the handle" (camera S12b): show the room set from that frame on
-    const setNow = id === 12 && f >= W("but the handle") ? "room" : s.set;
-    for (const [n, g] of Object.entries(this.groups)) g.visible = n === SETG[setNow];
+    for (const [n, g] of Object.entries(this.groups)) g.visible = n === SETG[s.set];
     const scf = this.ark.getObjectByName("scaffold"); if (scf) scf.visible = id <= 4;
     this.arkDoor.rotation.x = -(1 - doorShut(id, t)) * 1.48;   // open = swung down onto the ramp, shut = upright
     const wl = waterY(id, t);

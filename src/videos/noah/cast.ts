@@ -386,7 +386,7 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
     }
     case 9: rain(out, cam, t, 60, 1.4); break;
     case 12: {
-      if (!on(t, "but the handle")) {
+      if (true) { // the friend keeps knocking through "but the handle is on your side" (the room cut darkened shot 16)
         const p = add(COT, [0.35, 0, 0.95]);
         who(out, cam, t, 0, FRIEND, p, [-1, -0.25], { expr: "smile", front: 0.9 });
         knocks(out, t, add(COT, [0.05, 1.45, 0.25]));
