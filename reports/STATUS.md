@@ -29,4 +29,11 @@ WORKER READY os=Windows 11 Home 10.0.26300 gpu=NVIDIA GeForce RTX 4060 Laptop GP
   (b) row 3 col 2 (~t=26 s): empty pink/purple sky only, no characters;
   (c) row 5 col 2 (~t=50 s): empty green field under a dark blue sky, no characters;
   (d) row 3 cols 5-6 (~t=32-34 s): door close-up with a bright glow patch at the top that looks slightly blown out.
-- Next: job 004 (Cain and Abel) is rendering; it will use the new mux.
+- DONE 004 cain-and-abel: duration=75.30s res=1440x2560 30fps h264+aac, render_min=13.83 (829.9 s, 2259 frames, ~2.7 fps), sheet=reports/cain-and-abel_sheet.jpg.
+  New mux (system ffmpeg, aac 320k 48 kHz). Volume: EN mean -18.1 dB / max -1.0; HI mean -17.0 dB / max -1.1.
+  Copies: FINAL VIDEOS\Cain and Abel - ENGLISH.mp4 / - HINDI.mp4.
+  QA from sheet (38 frames, every 2 s; empty bottom tiles are unused slots): no black frames, no floating characters seen. Notes, probably intentional:
+  (a) row 1 col 3 (~t=4 s): empty orange ground, characters out of frame after walking off;
+  (b) rows 3-4 (~t=24-26 s, ~32 s, ~40 s): several ghosted dissolves between shots;
+  (c) row 6 col 3 (~t=52 s): ground close-up with an orange ring/glow and a stick, no characters.
+- Next: job 006 (Noah re-render with the fixed field shot) is rendering now.
