@@ -14,4 +14,11 @@ WORKER READY os=Windows 11 Home 10.0.26300 gpu=NVIDIA GeForce RTX 4060 Laptop GP
   Files kept local: exports/paul-barnabas-mark_EN.mp4 (165.5 MB), exports/paul-barnabas-mark_HI.mp4 (165.5 MB).
   QA from sheet (41 frames, every 2 s): no black frames, no missing or floating characters, blur looks consistent, no sudden jumps seen. Last tile is empty only because 41 frames fill 42 slots. Grey-blue prison-wall shots near the end look like an intentional grade.
   Note: Remotion's bundled ffmpeg has no fps/tile/select filters, so the contact sheet is built with the system ffmpeg (Gyan build) instead. Muxing still uses `npx remotion ffmpeg`.
-- Next: jobs 003, 004 as listed in jobs/queue.md.
+- DONE 005 (no-audio fix) for paul-barnabas-mark:
+  Diagnosis of the ORIGINAL export before re-mux: the file already had an audio track.
+  `ffprobe`: stream|index=0|codec_name=h264|codec_type=video|duration=82.133333 ; stream|index=1|codec_name=aac|codec_type=audio|duration=82.166000
+  `volumedetect` (EN, original): mean_volume -18.0 dB, max_volume -1.1 dB (same as audio/paul-barnabas-mark_EN.m4a). So the first mux was not silent on disk.
+  Re-muxed EN + HI with system ffmpeg (-map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 320k -ar 48000 -shortest -movflags +faststart).
+  After: EN mean -18.0 dB / max -1.1 dB; HI mean -16.9 dB / max -1.1 dB. Both aac 48 kHz stereo, 82.17 s, 1440x2560. (EN is -18, not -17, because the source itself is -18.)
+  If the user still hears nothing, the likely cause is the player or the file played (out\ is silent by design), not the export.
+- Next: jobs 003, 004 as listed in jobs/queue.md. 003 and 004 will use the new mux.
