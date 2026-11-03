@@ -46,3 +46,5 @@ Shot 12 no longer cuts to the room: the friend keeps knocking in the rain throug
 - comp: NoahShort   name: noah-the-door   extra: --scale=1.3333333333333333
 - Compare t=50, 60, 64, 68, 71 s with the OLD 003 render. Ends must be bright (brown door, white brick); ~50 s must show the friend at the door (not an empty field).
 - If OK: new mux + volume check, sheet, replace "Noah and the Door - ENGLISH/HINDI.mp4" in FINAL VIDEOS\.
+
+# QUEUE CLOSED: no open jobs. See jobs/STOP.md. Do not render.
