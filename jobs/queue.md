@@ -19,3 +19,11 @@ Before job 001, run the still test from WORKER.md (NoahShort frame 900) and put 
 ## 004 - Cain and Abel (full)
 - comp: CainShort   name: cain-and-abel   extra: --scale=1.3333333333333333   (1440x2560, 2259 frames)
 - mux EN + HI, contact sheet, report.
+
+## 005 - FIX: no audio in exports (do this NOW, before or right after the current render)
+The user hears no sound in exports/paul-barnabas-mark_EN.mp4 / _HI.mp4. The audio files in audio/ are fine (mean -17 dB).
+1. Diagnose: `ffprobe -v error -show_entries stream=index,codec_type,codec_name,duration -of compact exports/paul-barnabas-mark_EN.mp4`
+   and `ffmpeg -hide_banner -i exports/paul-barnabas-mark_EN.mp4 -map 0:a:0 -af volumedetect -f null NUL`. Put both outputs in STATUS.md.
+2. Re-mux EN + HI with the new step 3 in WORKER.md (system ffmpeg, -c:a aac re-encode, explicit -map). Check that mean_volume is about -17 dB for both.
+3. Use the same new mux for 003 and 004. If either was already muxed the old way, re-mux it.
+4. Tell the user to play exports\paul-barnabas-mark_EN.mp4 (NOT the silent picture-only file in out\).

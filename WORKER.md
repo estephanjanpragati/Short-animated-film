@@ -21,9 +21,12 @@ Each job lists: id, composition(s), output name(s), and optional extra flags (--
 1. `git pull`.
 2. Render the picture:
    `npx remotion render src/index.ts <Comp> out/<name>.mp4 <gl> --codec=h264 --crf=16 --muted --timeout=240000 <extra flags>`
-3. Make both language versions:
-   `npx remotion ffmpeg -y -i out/<name>.mp4 -i audio/<name>_EN.m4a -map 0:v -map 1:a -c copy -shortest -movflags +faststart exports/<name>_EN.mp4`
+3. Make both language versions with the SYSTEM ffmpeg (not `npx remotion ffmpeg`), re-encoding the audio:
+   `ffmpeg -y -i out/<name>.mp4 -i audio/<name>_EN.m4a -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 320k -ar 48000 -shortest -movflags +faststart exports/<name>_EN.mp4`
    Then run the same command again with `_HI` in place of `_EN`.
+   Check the sound in each export:
+   `ffmpeg -hide_banner -i exports/<name>_EN.mp4 -map 0:a:0 -af volumedetect -f null NUL`
+   mean_volume must be about -17 dB (between -22 and -13). If there is no audio stream, or it reads -91 dB (silence), the export FAILED: report it.
 4. QA:
    - `npx remotion ffprobe exports/<name>_EN.mp4` and note the duration and resolution.
    - Make a contact sheet:
