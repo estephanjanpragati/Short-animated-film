@@ -10,4 +10,8 @@ WORKER READY os=Windows 11 Home 10.0.26300 gpu=NVIDIA GeForce RTX 4060 Laptop GP
 - `user-aa` could not be reached by direct message, so reports go through this file.
 - DONE 001 noah-test: 300 frames at 1440x2560 (--scale=1.3333), --gl=angle, h264 crf16. render_min=1.74 (104.1 s wall, bundle cached), ~2.9 frames/second. Output 39.1 MB (out/noah-test.mp4, kept local).
   Estimate for full jobs at this speed: 002 (2465 frames) ~14 min, 003 (2154) ~12.5 min, 004 (2259) ~13 min.
-- Next: jobs 002, 003, 004 as listed in jobs/queue.md.
+- DONE 002 paul-barnabas-mark: duration=82.17s res=1440x2560 30fps h264+aac, render_min=12.67 (760 s, 2465 frames, ~3.2 fps), sheet=reports/paul-barnabas-mark_sheet.jpg.
+  Files kept local: exports/paul-barnabas-mark_EN.mp4 (165.5 MB), exports/paul-barnabas-mark_HI.mp4 (165.5 MB).
+  QA from sheet (41 frames, every 2 s): no black frames, no missing or floating characters, blur looks consistent, no sudden jumps seen. Last tile is empty only because 41 frames fill 42 slots. Grey-blue prison-wall shots near the end look like an intentional grade.
+  Note: Remotion's bundled ffmpeg has no fps/tile/select filters, so the contact sheet is built with the system ffmpeg (Gyan build) instead. Muxing still uses `npx remotion ffmpeg`.
+- Next: jobs 003, 004 as listed in jobs/queue.md.
