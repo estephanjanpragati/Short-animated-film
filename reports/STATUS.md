@@ -21,4 +21,12 @@ WORKER READY os=Windows 11 Home 10.0.26300 gpu=NVIDIA GeForce RTX 4060 Laptop GP
   Re-muxed EN + HI with system ffmpeg (-map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 320k -ar 48000 -shortest -movflags +faststart).
   After: EN mean -18.0 dB / max -1.1 dB; HI mean -16.9 dB / max -1.1 dB. Both aac 48 kHz stereo, 82.17 s, 1440x2560. (EN is -18, not -17, because the source itself is -18.)
   If the user still hears nothing, the likely cause is the player or the file played (out\ is silent by design), not the export.
-- Next: jobs 003, 004 as listed in jobs/queue.md. 003 and 004 will use the new mux.
+- DONE 003 noah-the-door: duration=71.80s res=1440x2560 30fps h264+aac, render_min=10.41 (624.5 s, 2154 frames, ~3.45 fps), sheet=reports/noah-the-door_sheet.jpg.
+  Muxed with the new step (system ffmpeg, aac 320k 48 kHz). Volume: EN mean -17.7 dB / max -1.2; HI mean -17.0 dB / max -1.1.
+  Copies: FINAL VIDEOS\Noah and the Door - ENGLISH.mp4 / - HINDI.mp4.
+  QA from sheet (36 frames, every 2 s; the black bottom rows are unused tiles): no black frames, no floating characters seen. Notes, probably intentional but please confirm:
+  (a) sheet row 2 col 5 (~t=20 s): two shots overlap as a semi-transparent dissolve (ghosted faces over the sunset row);
+  (b) row 3 col 2 (~t=26 s): empty pink/purple sky only, no characters;
+  (c) row 5 col 2 (~t=50 s): empty green field under a dark blue sky, no characters;
+  (d) row 3 cols 5-6 (~t=32-34 s): door close-up with a bright glow patch at the top that looks slightly blown out.
+- Next: job 004 (Cain and Abel) is rendering; it will use the new mux.
