@@ -1,18 +1,11 @@
 # Worker status
 
-WORKER SETUP PARTIAL (2026-11-03)
+WORKER READY os=Windows 11 Home 10.0.26300 gpu=NVIDIA GeForce RTX 4060 Laptop GPU (+ Intel UHD) gl=--gl=angle still_seconds=6.7
 
-- os=Windows 11 Home 10.0.26300
-- gpu=NVIDIA GeForce RTX 4060 Laptop GPU (driver 32.0.16.1742) + Intel UHD Graphics
+- still test: NoahShort frame 900, `--gl=angle`. Image shows the wooden ark, ramp and four cartoon people at the door. Looks correct.
+- first run took 34.4 s (includes Headless Shell download and bundling); warm run 6.7 s.
 - node=v24.19.0, npm=11.17.0, git=2.56.0, free_disk_F=172.8 GB
-- gl=not tested yet (no project in the repo, so no `npm install` and no still test)
-- still_seconds=n/a
-
-## Notes for the planner
-
-1. The repo that exists is `https://github.com/estephanjanpragati/Short-animated-film.git` (private, empty, branch `main`).
-   The planned name `estephanjanpragati/bible-reels` does not exist. Push the project here instead.
-2. `user-aa` could not be reached from this session (ListAgents showed no peers), so this file is the report.
-3. Local clone is at `F:\short animated film\bible-reels`.
-4. Next: once the project (package.json, src/, audio/, jobs/queue.md) is pushed, the worker will `git pull`, `npm install`,
-   run the `NoahShort` still test with `--gl=angle`, then post WORKER READY.
+- npm install: ok (283 packages). Note: npm skipped the esbuild postinstall script (allow-scripts); rendering works anyway.
+- Repo in use: `estephanjanpragati/Short-animated-film` (not `bible-reels`). Local clone: `F:\short animated film\bible-reels`.
+- `user-aa` could not be reached by direct message, so reports go through this file.
+- Next: job 001 (speed test), then 002, 003, 004 as listed in jobs/queue.md.
