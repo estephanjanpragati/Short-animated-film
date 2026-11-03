@@ -47,4 +47,10 @@ WORKER READY os=Windows 11 Home 10.0.26300 gpu=NVIDIA GeForce RTX 4060 Laptop GP
   - t=35-36 s FIXED: Abel's close-up now has the altar/hills set behind him (was the washed-out set). A faint ghost of trees is visible at t=35, which looks like the dissolve in progress.
   - t=3, 12, 52, 62, 74 s identical to the old render. No new regressions, no black frames.
   Replaced "Cain and Abel - ENGLISH/HINDI.mp4" in FINAL VIDEOS\ with the new files.
-- Next: job 008 (Noah re-render, replaces 006) is rendering now. Old Noah (job 003) in FINAL VIDEOS\ is the comparison baseline and stays until 008 is verified at t=50, 60, 64, 68, 71 s.
+- DONE 008 noah-the-door (re-render, replaces 006): duration=71.80s res=1440x2560, render_min=11.52 (691 s, 2154 frames), sheet=reports/noah-the-door_sheet.jpg (new). Mux: EN mean -17.7 dB / max -1.2; HI mean -17.0 dB / max -1.1.
+  Compared old job-003 render (FINAL VIDEOS) vs new at t=50, 60, 64, 68, 71 s:
+  - t=50 s FIXED: the friend in the yellow hat now stands knocking at the door in the rain (was an empty green field under a dark blue sky).
+  - t=60, 64, 68, 71 s identical to the old render and bright (brown door, white brick wall, handle). The dark ending from job 006 is gone.
+  Sheet: no black frames, no floating characters; the black bottom rows are unused tiles. The earlier ghosted dissolve (~20 s), empty pink sky (~26 s) and blown-out glow (~32-34 s) are unchanged and were left as intentional by the planner.
+  Replaced "Noah and the Door - ENGLISH/HINDI.mp4" in FINAL VIDEOS\ with the new files.
+- All queued jobs (001-008) are done. FINAL VIDEOS\ holds the current EN + HI versions of all three reels. Waiting for new jobs.
