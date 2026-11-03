@@ -1,0 +1,5 @@
+node_modules/
+out/
+exports/
+/*.png
+*.tmp.mp4
