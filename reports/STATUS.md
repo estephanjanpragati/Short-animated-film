@@ -36,4 +36,9 @@ WORKER READY os=Windows 11 Home 10.0.26300 gpu=NVIDIA GeForce RTX 4060 Laptop GP
   (a) row 1 col 3 (~t=4 s): empty orange ground, characters out of frame after walking off;
   (b) rows 3-4 (~t=24-26 s, ~32 s, ~40 s): several ghosted dissolves between shots;
   (c) row 6 col 3 (~t=52 s): ground close-up with an orange ring/glow and a stick, no characters.
-- Next: job 006 (Noah re-render with the fixed field shot) is rendering now.
+- DONE 006 noah-the-door (re-render) WITH A REGRESSION: duration=71.80s res=1440x2560, render_min~10.5, sheet=reports/noah-the-door_sheet.jpg (new), exports/noah-the-door_EN/HI.mp4 re-muxed (EN mean -17.7 dB, HI -17.0 dB).
+  FIXED: the shot at ~50 s now shows the door and handle (sheet row 5 col 2), no more empty green field.
+  REGRESSION: the last shots (~t=66-71 s, sheet row 6 cols 4-6) are almost black. The door, wall and floor are dark navy; only the gold handle and the light strip at the bottom are visible. In the first render (job 003) the same shots were bright (brown door, white brick wall, handle).
+  Before/after at t=60/64/68/71 s: reports/noah_006_end_regression.png (top row = old job-003 render, bottom row = new). t=60 and 64 are the same in both; 68 and 71 are the dark ones.
+  Because of this, FINAL VIDEOS\ still holds the OLD Noah files (with the empty-field shot). The new files are in exports\ only. Waiting for the planner to fix the lighting (probably the world.ts change) and queue a new job.
+- Next: job 007 (Cain re-render) is rendering now; I will compare it frame by frame against the old Cain at the same timestamps.
