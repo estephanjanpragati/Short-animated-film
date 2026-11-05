@@ -53,4 +53,9 @@ WORKER READY os=Windows 11 Home 10.0.26300 gpu=NVIDIA GeForce RTX 4060 Laptop GP
   - t=60, 64, 68, 71 s identical to the old render and bright (brown door, white brick wall, handle). The dark ending from job 006 is gone.
   Sheet: no black frames, no floating characters; the black bottom rows are unused tiles. The earlier ghosted dissolve (~20 s), empty pink sky (~26 s) and blown-out glow (~32-34 s) are unchanged and were left as intentional by the planner.
   Replaced "Noah and the Door - ENGLISH/HINDI.mp4" in FINAL VIDEOS\ with the new files.
-- All queued jobs (001-008) are done. FINAL VIDEOS\ holds the current EN + HI versions of all three reels. Waiting for new jobs.
+- DONE 009 head-covering (EN + HI): duration=71.50s res=1440x2560 30fps, render_min ~13.0 each (HI 780 s; EN about the same), sheets=reports/head-covering_sheet.jpg (EN) and reports/head-covering_sheet_HI.jpg.
+  Volume (new AAC mux): EN mean -17.7 dB / max -1.2; HI mean -16.9 dB / max -1.2.
+  Copies: FINAL VIDEOS\Head Covering - Day 1 - ENGLISH.mp4 / - HINDI.mp4.
+  QA from both sheets (36 frames each): no black frames, no floating characters, text overlays legible, Hindi text renders correctly, end card shows "Bible Stories For You". Note: in the first three tiles (~t=0-4 s) the title text overlaps the top of the characters' heads ("HEAD IN CHURCH?" over the yellow-haired head, "CHURCH?" over the black hair); may be intended.
+  Google Drive upload NOT done (about 160 MB per file, too large for the Drive connector); the user drags both files into "Bible Reels - FINAL" by hand.
+- Jobs 001-008 are done. FINAL VIDEOS\ holds the current EN + HI versions of all three reels. Waiting for new jobs.
