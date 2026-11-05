@@ -130,9 +130,10 @@ const Overlays: React.FC = () => {
   return (
     <>
       {hook > 0.01 && (
-        <AbsoluteFill style={{ alignItems: "center", paddingTop: 150, opacity: hook }}>
-          <Pill size={40} style={{ marginBottom: 40 }}>{L.badge}</Pill>
-          <Big size={98} style={{ width: 960 }}>{L.q}</Big>
+        <AbsoluteFill style={{ alignItems: "center", paddingTop: 120, opacity: hook,
+          background: "linear-gradient(180deg, rgba(20,16,40,0.78) 0%, rgba(20,16,40,0.55) 26%, rgba(20,16,40,0) 42%)" }}>
+          <Pill size={40} style={{ marginBottom: 34 }}>{L.badge}</Pill>
+          <Big size={lang() === "en" ? 80 : 98} style={{ width: 1010 }}>{L.q}</Big>
         </AbsoluteFill>)}
       {card > 0.01 && (
         <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", opacity: card, transform: `scale(${0.92 + 0.08 * card})` }}>

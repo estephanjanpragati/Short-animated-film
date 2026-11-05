@@ -59,3 +59,9 @@ Two renders this time: the picture is the same, but the on-screen text is Englis
 - Also upload both exports to the Google Drive folder "Bible Reels - FINAL" (the same folder the user used before) if you can do it without logging in to anything new; otherwise tell the user to drag them in.
 - 71.5 s, 2145 frames each. Expect about 25 minutes for both renders.
 - Run once, no loop. Report DONE 009 when finished.
+
+## 010 - Head covering ENGLISH only: hook text fix
+On Windows the English question wrapped to 4 lines and sat on top of the women's faces (it's the thumbnail frame). Cover.tsx now uses a smaller English size and adds a dark band behind the text. Hindi is unchanged.
+- render: `npx remotion render src/index.ts CoverShort out/head-covering_EN.mp4 --gl=angle --codec=h264 --crf=16 --muted --timeout=240000 --scale=1.3333333333333333 --props=jobs/props_en.json`
+- mux with audio/head-covering_EN.m4a -> exports/head-covering_EN.mp4, check the volume, and save one frame at 2 s to reports/head-covering_EN_hook.jpg
+- replace "Head Covering - Day 1 - ENGLISH.mp4" in FINAL VIDEOS\. Run once, no loop. Start only when the user says so.
