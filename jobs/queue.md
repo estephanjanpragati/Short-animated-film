@@ -48,3 +48,14 @@ Shot 12 no longer cuts to the room: the friend keeps knocking in the rain throug
 - If OK: new mux + volume check, sheet, replace "Noah and the Door - ENGLISH/HINDI.mp4" in FINAL VIDEOS\.
 
 # QUEUE CLOSED: no open jobs. See jobs/STOP.md. Do not render.
+
+## 009 - NEW REEL: Should women cover their head in church? (Have You Ever Thought? Day 1)
+Two renders this time: the picture is the same, but the on-screen text is English in one and Hindi in the other.
+- render EN: `npx remotion render src/index.ts CoverShort out/head-covering_EN.mp4 --gl=angle --codec=h264 --crf=16 --muted --timeout=240000 --scale=1.3333333333333333 --props=jobs/props_en.json`
+- render HI: same command with `out/head-covering_HI.mp4` and `--props=jobs/props_hi.json`
+- mux (system ffmpeg, as in WORKER.md step 3): out/head-covering_EN.mp4 + audio/head-covering_EN.m4a -> exports/head-covering_EN.mp4; same for HI.
+- volume check (about -17 dB mean), contact sheet of the EN video -> reports/head-covering_sheet.jpg
+- copy to FINAL VIDEOS\ as "Head Covering - Day 1 - ENGLISH.mp4" and "Head Covering - Day 1 - HINDI.mp4"
+- Also upload both exports to the Google Drive folder "Bible Reels - FINAL" (the same folder the user used before) if you can do it without logging in to anything new; otherwise tell the user to drag them in.
+- 71.5 s, 2145 frames each. Expect about 25 minutes for both renders.
+- Run once, no loop. Report DONE 009 when finished.
