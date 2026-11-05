@@ -58,4 +58,7 @@ WORKER READY os=Windows 11 Home 10.0.26300 gpu=NVIDIA GeForce RTX 4060 Laptop GP
   Copies: FINAL VIDEOS\Head Covering - Day 1 - ENGLISH.mp4 / - HINDI.mp4.
   QA from both sheets (36 frames each): no black frames, no floating characters, text overlays legible, Hindi text renders correctly, end card shows "Bible Stories For You". Note: in the first three tiles (~t=0-4 s) the title text overlaps the top of the characters' heads ("HEAD IN CHURCH?" over the yellow-haired head, "CHURCH?" over the black hair); may be intended.
   Google Drive upload NOT done (about 160 MB per file, too large for the Drive connector); the user drags both files into "Bible Reels - FINAL" by hand.
+- DONE 010 head-covering ENGLISH only (hook text fix): duration=71.50s res=1440x2560, render_min=11.39 (683.5 s). The first attempt crashed at frame ~1026/2145 with "Chrome ran out of memory" (concurrency 8, other apps open, probably GPU memory); the one retry used --concurrency=4 after the user's other apps were closed, and passed.
+  Volume (new AAC mux): EN mean -17.7 dB / max -1.2. Hook frame at 2 s: reports/head-covering_EN_hook.jpg. The title is now 3 lines above the women's faces on a dark band, no overlap with heads. Contact sheet refreshed: reports/head-covering_sheet.jpg.
+  Replaced FINAL VIDEOS\Head Covering - Day 1 - ENGLISH.mp4. Hindi is unchanged.
 - Jobs 001-008 are done. FINAL VIDEOS\ holds the current EN + HI versions of all three reels. Waiting for new jobs.
