@@ -73,3 +73,8 @@ Hindi follows later (the Hindi voice is waiting on ElevenLabs credits).
 - contact sheet -> reports/two-mountains_sheet.jpg (fps=0.5, scale=240:-1, tile=6x7), commit + push reports/ and add 011 to jobs/done.md.
 - copy to FINAL VIDEOS\ as "Two Mountains - Day 2 - ENGLISH.mp4" and upload it to the Drive folder "Bible Reels - FINAL" if you can without a new login.
 - 77.9 s, 2337 frames. Expect about 15 minutes. Run once, no loop. Report DONE 011.
+
+## 012 - Two Mountains ENGLISH re-render (replaces 011)
+Fixed: Sinai wide shot (~36 s) now shows the crowd and a smaller mountain; the angel light (~28-31 s) no longer washes the frame white; the ram close-up (~31 s) is no longer blocked by Isaac; Isaac's wood bundle no longer covers his face (~22-26 s).
+- Same commands as 011 (render, mux with audio/two-mountains_EN.m4a, volume check, sheet -> reports/two-mountains_sheet.jpg).
+- Replace "Two Mountains - Day 2 - ENGLISH.mp4" in FINAL VIDEOS\. Run once, no loop. Report DONE 012.

@@ -385,10 +385,10 @@ export class World {
     // ======== SINAI: the mountain in cloud, the camp and the calf's plinth below it ========
     {
       const [x, , z] = HILLX, cb = new Batch();
-      mountain(cb, M.rock, x + 4, z - 70, 62, 46, 907);
+      mountain(cb, M.rock, x + 4, z - 60, 40, 38, 907);
       mountain(cb, M.rock, x - 40, z - 85, 40, 34, 911); mountain(cb, M.rock, x + 48, z - 90, 44, 36, 913);
       const cloud = lam("sinaiCloud", () => ({ color: "#f4f4f8" }));
-      for (let i = 0; i < 9; i++) { const sp = new THREE.SphereGeometry(1, 16, 10); sp.scale(9 + (i % 3) * 3, 4.5, 7); cb.add(sp, cloud, new THREE.Matrix4().makeTranslation(x + 4 + (i - 4) * 6.5, 50 + (i % 2) * 5, z - 72 + (i % 3) * 3)); }
+      for (let i = 0; i < 9; i++) { const sp = new THREE.SphereGeometry(1, 16, 10); sp.scale(9 + (i % 3) * 3, 4.5, 7); cb.add(sp, cloud, new THREE.Matrix4().makeTranslation(x + 4 + (i - 4) * 6.5, 34 + (i % 2) * 4, z - 62 + (i % 3) * 3)); }
       cb.add(flatQuad(x - 30, x + 30, z - 30, z + 20, 0.01, 4), M.dust);
       const cloths = ["#a07a62", "#c9a46a", "#8a6a52", "#d8c49a"];
       for (let i = 0; i < 9; i++) {
@@ -495,7 +495,7 @@ export class World {
     const setNow = s.set; void W;
     for (const [n, g] of Object.entries(this.groups)) g.visible = n === SETG[setNow];
     const staff = this.groups.altars?.getObjectByName("staff"); if (staff) staff.visible = false;
-    (this.beam.material as THREE.MeshBasicMaterial).opacity = 0.32 * beamOn(id, t); this.beam.visible = beamOn(id, t) > 0.01;
+    (this.beam.material as THREE.MeshBasicMaterial).opacity = 0.12 * beamOn(id, t); this.beam.visible = beamOn(id, t) > 0.01;
     if (s.set === "kitchen" || s.set === "hut") { this.fog.near = 30; this.fog.far = 200; }
     void T;
     // ---- cast + effects ----

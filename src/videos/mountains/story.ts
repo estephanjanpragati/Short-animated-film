@@ -139,10 +139,10 @@ const S4b = (f: number) => dolly(HUT, [-0.9, 1.6, 4.4], [-1.3, 1.45, 1.4], pushK
 const S5a = (f: number) => dolly(ALT, [1.6, 1.9, 33], [0, 1.3, 20], pushK(f, fr(5), 0.0015), { fov: 42 });
 const S5b = (f: number) => dolly(ALT, [1.2, 1.45, 23.2 - pathWalk(1e9)], [0, 1.35, 20 - pathWalk(1e9)], pushK(f, W("father wheres"), 0.0025, 0.005, 30), { fov: 38 });
 const S6a = (f: number) => dolly(AB, [0.3, 1.6, 4.4], [-0.2, 1.5, 0.4], pushK(f, fr(6), 0.003, 0.006, 30), { fov: 40, roll: -0.03 });
-const S6b = (f: number) => dolly(AB, [-1.0, 2.0, 7.5], [0.2, 3.0, 0], pushK(f, W("and an angel"), 0.002), { fov: 44 });
-const S6c = (f: number) => dolly(AB, [0.5, 1.2, 2.2], [1.5, 0.75, -1.1], pushK(f, W("a ram is"), 0.003, 0.006, 30), { fov: 38, roll: 0.03 });
+const S6b = (f: number) => dolly(AB, [-0.6, 1.8, 7.0], [0.1, 1.9, 0], pushK(f, W("and an angel"), 0.002), { fov: 44 });
+const S6c = (f: number) => dolly(AB, [2.7, 1.2, 1.5], [1.5, 0.75, -1.1], pushK(f, W("a ram is"), 0.003, 0.006, 30), { fov: 38, roll: 0.03 });
 const S7a = (f: number) => dolly(AB, [0.8, 2.2, 10], [0, 1.6, 0], pushK(f, fr(7), 0.002), { fov: 44 });
-const S8a = (f: number) => dolly(SI, [1.5, 2.2, 22], [0, 9, -30], pushK(f, fr(8), 0.0015), { fov: 46 });
+const S8a = (f: number) => dolly(SI, [1.0, 1.8, 15], [0, 5, -20], pushK(f, fr(8), 0.0015), { fov: 50 });
 const S8b = (f: number) => dolly(SI, [-1.2, 1.9, 13.5], [0, 1.4, 6.5], pushK(f, W("below the people"), 0.0022), { fov: 44 });
 const S8c = (f: number) => dolly(SI, [1.3, 1.6, 8.6], [0.4, 1.2, 4.2], pushK(f, W("and aaron melts"), 0.003, 0.006, 30), { fov: 40, roll: -0.03 });
 const S9a = (f: number) => dolly(SI, [-4.2, 1.7, 9.6], [-2.6, 1.5, 4.8], pushK(f, fr(9), 0.0025), { fov: 40 });

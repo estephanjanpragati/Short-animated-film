@@ -361,7 +361,7 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
         who(out, cam, t, 0, ABRAHAM, ap, dirTo(ap, ip), { expr: on(t, "abraham says") ? "smile_closed" : "pained", front: 0.3 });
         who(out, cam, t, 1, ISAAC, ip, dirTo(ip, ap), { expr: on(t, "abraham says") ? "smile" : "nervous", front: 0.3, scale: 0.88 });
       }
-      fxOn(out, "wood", 300, 200, fxWood, add(ip, [0.12, 1.15, 0.12]), 0.62, 0.42);
+      fxOn(out, "wood", 300, 200, fxWood, add(ip, [0.32, 0.9, -0.12]), 0.62, 0.42);
       break;
     }
     case 6: {
