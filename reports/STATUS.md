@@ -69,4 +69,11 @@ WORKER READY os=Windows 11 Home 10.0.26300 gpu=NVIDIA GeForce RTX 4060 Laptop GP
   (b) ~t=26-28 s (row 3 cols 3-4): bright white-washed flash shot with tree outlines;
   (c) ~t=30 s (row 3 col 5): extreme close-up of a face/neck, head cut off;
   (d) ~t=56 s (row 5 col 6): ghosted dissolve between two shots.
+- DONE 012 two-mountains ENGLISH re-render (replaces 011): duration=77.90s res=1440x2560, render_min=14.52 (871.5 s, 2337 frames, --concurrency=4), sheet=reports/two-mountains_sheet.jpg. Volume mean -18.5 dB / max -1.1.
+  Compared old (job 011) vs new at t=22, 25, 29, 31, 36, 38 s: all four planner fixes confirmed.
+  - ~25 s: Isaac's face is visible, the wood bundle no longer covers it (~22 s bundle is held lower);
+  - ~29-31 s: the angel light is a soft glow with the scene readable, no white-out;
+  - ~31 s: the ram close-up shows the ram clearly, not blocked by Isaac;
+  - ~38 s: the Sinai wide shot has a smaller mountain with the crowd visible.
+  Other sheet tiles unchanged, no black frames, no new problems. Replaced FINAL VIDEOS\Two Mountains - Day 2 - ENGLISH.mp4.
 - Jobs 001-008 are done. FINAL VIDEOS\ holds the current EN + HI versions of all three reels. Waiting for new jobs.
