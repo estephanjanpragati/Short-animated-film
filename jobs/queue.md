@@ -65,3 +65,11 @@ On Windows the English question wrapped to 4 lines and sat on top of the women's
 - render: `npx remotion render src/index.ts CoverShort out/head-covering_EN.mp4 --gl=angle --codec=h264 --crf=16 --muted --timeout=240000 --scale=1.3333333333333333 --props=jobs/props_en.json`
 - mux with audio/head-covering_EN.m4a -> exports/head-covering_EN.mp4, check the volume, and save one frame at 2 s to reports/head-covering_EN_hook.jpg
 - replace "Head Covering - Day 1 - ENGLISH.mp4" in FINAL VIDEOS\. Run once, no loop. Start only when the user says so.
+
+## 011 - NEW REEL: Two Mountains, Abraham and Aaron (Have You Ever Thought? Day 2), ENGLISH only
+Hindi follows later (the Hindi voice is waiting on ElevenLabs credits).
+- render: `npx remotion render src/index.ts MountainsShort out/two-mountains_EN.mp4 --gl=angle --codec=h264 --crf=16 --muted --timeout=240000 --scale=1.3333333333333333 --props=jobs/props_en.json`
+- mux (system ffmpeg, as in WORKER.md step 3): out/two-mountains_EN.mp4 + audio/two-mountains_EN.m4a -> exports/two-mountains_EN.mp4, AAC re-encode, volume check (about -17 dB mean).
+- contact sheet -> reports/two-mountains_sheet.jpg (fps=0.5, scale=240:-1, tile=6x7), commit + push reports/ and add 011 to jobs/done.md.
+- copy to FINAL VIDEOS\ as "Two Mountains - Day 2 - ENGLISH.mp4" and upload it to the Drive folder "Bible Reels - FINAL" if you can without a new login.
+- 77.9 s, 2337 frames. Expect about 15 minutes. Run once, no loop. Report DONE 011.
