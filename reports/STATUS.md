@@ -61,4 +61,12 @@ WORKER READY os=Windows 11 Home 10.0.26300 gpu=NVIDIA GeForce RTX 4060 Laptop GP
 - DONE 010 head-covering ENGLISH only (hook text fix): duration=71.50s res=1440x2560, render_min=11.39 (683.5 s). The first attempt crashed at frame ~1026/2145 with "Chrome ran out of memory" (concurrency 8, other apps open, probably GPU memory); the one retry used --concurrency=4 after the user's other apps were closed, and passed.
   Volume (new AAC mux): EN mean -17.7 dB / max -1.2. Hook frame at 2 s: reports/head-covering_EN_hook.jpg. The title is now 3 lines above the women's faces on a dark band, no overlap with heads. Contact sheet refreshed: reports/head-covering_sheet.jpg.
   Replaced FINAL VIDEOS\Head Covering - Day 1 - ENGLISH.mp4. Hindi is unchanged.
+- DONE 011 two-mountains (ENGLISH only, MountainsShort): duration=77.90s res=1440x2560 30fps h264+aac, render_min=14.00 (839.6 s, 2337 frames, --concurrency=4 because the user was editing video on this PC), sheet=reports/two-mountains_sheet.jpg.
+  Volume (new AAC mux): mean -18.5 dB / max -1.1 (a bit quieter than the usual -17 to -18; the source audio is the same level).
+  Copy: FINAL VIDEOS\Two Mountains - Day 2 - ENGLISH.mp4. Google Drive upload NOT done (file too big for the connector); the user drags it in by hand.
+  QA from the sheet (39 frames, every 2 s; empty last tiles are unused slots): no black frames, no floating characters, hook text clear of faces, end card "Bible Stories For You / Abraham or Aaron? Tell me in the comments" fades in at the end. Notes, probably intentional:
+  (a) ~t=36-40 s (sheet row 4 cols 1-3): wide shot with a heavily blurred hill in the foreground and tiny characters;
+  (b) ~t=26-28 s (row 3 cols 3-4): bright white-washed flash shot with tree outlines;
+  (c) ~t=30 s (row 3 col 5): extreme close-up of a face/neck, head cut off;
+  (d) ~t=56 s (row 5 col 6): ghosted dissolve between two shots.
 - Jobs 001-008 are done. FINAL VIDEOS\ holds the current EN + HI versions of all three reels. Waiting for new jobs.
