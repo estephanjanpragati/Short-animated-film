@@ -7,6 +7,8 @@ import { NoahShort, NOAH_FRAMES } from "./videos/noah/Noah";
 import { CainShort, CAIN_FRAMES } from "./videos/cain/Cain";
 import { CoverShort, COVER_FRAMES } from "./videos/cover/Cover";
 import { MountainsShort, MOUNTAINS_FRAMES } from "./videos/mountains/Mountains";
+import { AbrahamShort, ABRAHAM_FRAMES } from "./videos/abraham/Abraham";
+import { AaronShort, AARON_FRAMES } from "./videos/aaron/Aaron";
 export const RemotionRoot: React.FC = () => (
   <>
     <Composition id="BridgeShort" component={BridgeShort} durationInFrames={BRIDGE_FRAMES} fps={30} width={1080} height={1920} />
@@ -15,6 +17,8 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="CainShort" component={CainShort} durationInFrames={CAIN_FRAMES} fps={30} width={1080} height={1920} />
     <Composition id="CoverShort" component={CoverShort} durationInFrames={COVER_FRAMES} fps={30} width={1080} height={1920} defaultProps={{ lang: "en" }} />
     <Composition id="MountainsShort" component={MountainsShort} durationInFrames={MOUNTAINS_FRAMES} fps={30} width={1080} height={1920} defaultProps={{ lang: "en" }} />
+    <Composition id="AbrahamShort" component={AbrahamShort} durationInFrames={ABRAHAM_FRAMES} fps={30} width={1080} height={1920} defaultProps={{ lang: "en" }} />
+    <Composition id="AaronShort" component={AaronShort} durationInFrames={AARON_FRAMES} fps={30} width={1080} height={1920} defaultProps={{ lang: "en" }} />
     <Composition id="CastSheet" component={CastSheet} durationInFrames={1} fps={30} width={1080} height={1920} />
   </>
 );

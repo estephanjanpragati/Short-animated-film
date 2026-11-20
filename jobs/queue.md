@@ -78,3 +78,13 @@ Hindi follows later (the Hindi voice is waiting on ElevenLabs credits).
 Fixed: Sinai wide shot (~36 s) now shows the crowd and a smaller mountain; the angel light (~28-31 s) no longer washes the frame white; the ram close-up (~31 s) is no longer blocked by Isaac; Isaac's wood bundle no longer covers his face (~22-26 s).
 - Same commands as 011 (render, mux with audio/two-mountains_EN.m4a, volume check, sheet -> reports/two-mountains_sheet.jpg).
 - Replace "Two Mountains - Day 2 - ENGLISH.mp4" in FINAL VIDEOS\. Run once, no loop. Report DONE 012.
+
+## 013 - TWO NEW REELS, English + Hindi (4 renders). Voice: the user's own cloned voice.
+Both are "The Bible, Start to Finish". Picture is the same per reel; only the on-screen text changes with --props.
+- AbrahamShort (81.1 s, 2433 frames): render `out/abraham_EN.mp4` with `--props=jobs/props_en.json` and `out/abraham_HI.mp4` with `--props=jobs/props_hi.json`
+- AaronShort (74.5 s, 2235 frames): render `out/aaron_EN.mp4` and `out/aaron_HI.mp4` the same way
+- render flags as always: `--gl=angle --codec=h264 --crf=16 --muted --timeout=240000 --scale=1.3333333333333333` (--concurrency=4 is fine)
+- mux each with audio/abraham_EN.m4a, abraham_HI.m4a, aaron_EN.m4a, aaron_HI.m4a -> exports/, AAC re-encode, volume check
+- contact sheets of the two EN videos -> reports/abraham_sheet.jpg and reports/aaron_sheet.jpg
+- copy to FINAL VIDEOS\ as "Abraham on the Mountain - ENGLISH.mp4", "Abraham on the Mountain - HINDI.mp4", "Aaron and the Golden Calf - ENGLISH.mp4", "Aaron and the Golden Calf - HINDI.mp4"
+- Expect about 1 hour for all four. Run once, no loop. Report DONE 013.
