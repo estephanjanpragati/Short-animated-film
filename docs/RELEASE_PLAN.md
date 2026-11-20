@@ -1,7 +1,7 @@
 # Bible Stories For You: release plan
 
 **Accounts:** Instagram @bible_stories_for_you_ · YouTube "Bible Stories For You" (was "Clipping", channel UCSXdAoNwaE5lPyBsqyNA6oQ)
-**Schedule:** Mon / Wed / Fri, English at 7:00 PM IST, Hindi of the same reel at 9:00 PM IST, both on the same accounts.
+**Schedule:** Mon / Wed / Fri, Hindi at 6:00 PM IST first, then English of the same reel at 9:00 PM IST, both on the same accounts (changed 20 Nov).
 
 ## The three series
 | # | Series (EN / HI) | What goes in |
