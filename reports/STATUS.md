@@ -76,4 +76,10 @@ WORKER READY os=Windows 11 Home 10.0.26300 gpu=NVIDIA GeForce RTX 4060 Laptop GP
   - ~31 s: the ram close-up shows the ram clearly, not blocked by Isaac;
   - ~38 s: the Sinai wide shot has a smaller mountain with the crowd visible.
   Other sheet tiles unchanged, no black frames, no new problems. Replaced FINAL VIDEOS\Two Mountains - Day 2 - ENGLISH.mp4.
+- DONE 013 two new reels, EN + HI (4 renders, --concurrency=4, run once, about 52 min total, 12-15 min each; Aaron HI 12.9 min):
+  abraham: 81.10 s, 1440x2560, volume EN mean -18.3 dB / max -1.0, HI mean -18.1 dB / max -1.0. Sheet: reports/abraham_sheet.jpg.
+  aaron:   74.50 s, 1440x2560, volume EN mean -17.9 dB / max -0.5, HI mean -17.6 dB / max -0.6. Sheet: reports/aaron_sheet.jpg.
+  Copies in FINAL VIDEOS\: "Abraham on the Mountain - ENGLISH.mp4" / "- HINDI.mp4", "Aaron and the Golden Calf - ENGLISH.mp4" / "- HINDI.mp4".
+  QA from the two English sheets (38 and 36 frames): no black frames, no floating characters, hook titles readable, end cards fade in. Hindi video is the same picture (only on-screen text differs), not separately viewed.
+  Note for the planner (probably the same look as the Sinai shot you fixed in Two Mountains): in Aaron, ~6-24 s (sheet rows 1-3), the big mountain is heavily blurred behind tiny characters with a strong tilt-shift look. Everything else looks fine.
 - Jobs 001-008 are done. FINAL VIDEOS\ holds the current EN + HI versions of all three reels. Waiting for new jobs.
