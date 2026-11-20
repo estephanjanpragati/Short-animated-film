@@ -111,3 +111,10 @@ Follow for a new Bible story every Mon, Wed & Fri.
 4. YouTube: upload as private with a scheduled publish time. YouTube posts it itself, with nothing running.
 5. Instagram: one short scheduled run at the slot time posts the reel, reports, and ends.
 6. Report: one message to the user saying what was posted, what's next, and anything that failed.
+
+## YouTube posting (works as of 20 Nov)
+Composio, account `youtube_raphe-gelder` (alias bible-channel, "Bible Stories For You", UCSXdAoNwaE5lPyBsqyNA6oQ).
+Do NOT use the default YouTube account (`youtube_inigo-albian`): that is a different channel.
+1. `GOOGLEDRIVE_DOWNLOAD_FILE` the video from "Bible Reels - FINAL" (fresh s3key).
+2. `YOUTUBE_MULTIPART_UPLOAD_VIDEO` {title, description = Instagram caption ("Follow" -> "Subscribe"), tags, categoryId "22", privacyStatus "public", videoFile {name, mimetype, s3key}}. Run once only: a re-run makes a duplicate.
+3. Check first with `YOUTUBE_LIST_CHANNEL_VIDEOS` (channelId above) so nothing is posted twice.
