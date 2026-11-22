@@ -118,3 +118,7 @@ Do NOT use the default YouTube account (`youtube_inigo-albian`): that is a diffe
 1. `GOOGLEDRIVE_DOWNLOAD_FILE` the video from "Bible Reels - FINAL" (fresh s3key).
 2. `YOUTUBE_MULTIPART_UPLOAD_VIDEO` {title, description = Instagram caption ("Follow" -> "Subscribe"), tags, categoryId "22", privacyStatus "public", videoFile {name, mimetype, s3key}}. Run once only: a re-run makes a duplicate.
 3. Check first with `YOUTUBE_LIST_CHANNEL_VIDEOS` (channelId above) so nothing is posted twice.
+
+## Hindi only (changed 22 Nov)
+From now on, make and post ONLY the Hindi version of every new reel (no English voice, render or post).
+Posting: Mon / Wed / Fri at 6:00 PM IST, Instagram + YouTube. Aaron Hindi goes out Mon 23 Nov as rendered (no fix).
