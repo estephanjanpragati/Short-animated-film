@@ -88,3 +88,12 @@ Both are "The Bible, Start to Finish". Picture is the same per reel; only the on
 - contact sheets of the two EN videos -> reports/abraham_sheet.jpg and reports/aaron_sheet.jpg
 - copy to FINAL VIDEOS\ as "Abraham on the Mountain - ENGLISH.mp4", "Abraham on the Mountain - HINDI.mp4", "Aaron and the Golden Calf - ENGLISH.mp4", "Aaron and the Golden Calf - HINDI.mp4"
 - Expect about 1 hour for all four. Run once, no loop. Report DONE 013.
+
+## 014 - PAUL'S JOURNEYS, PART 1 (Hindi only, 1 render). Voice: ElevenLabs "Harish".
+New series "पौलुस की यात्राएँ" (9 reels, docs/paul-journeys_SERIES.md). From now on every reel is Hindi only, so there is no --props.
+- Paul1Short (64.8 s, 1945 frames): render `out/paul1_HI.mp4`
+- render flags as always: `--gl=angle --codec=h264 --crf=16 --muted --timeout=240000 --scale=1.3333333333333333` (--concurrency=4 is fine)
+- mux with audio/paul1_HI.m4a -> exports/, AAC re-encode, volume check
+- contact sheet -> reports/paul1_sheet.jpg (check: the night shots 7-8 are dark blue but readable, the light from heaven in shots 4-5 does not white out Saul)
+- copy to FINAL VIDEOS\ as "Paul 1 - Saul to Paul - HINDI.mp4"
+- Expect about 15 minutes. Run once, no loop. Report DONE 014.
