@@ -97,3 +97,11 @@ New series "पौलुस की यात्राएँ" (9 reels, docs/paul
 - contact sheet -> reports/paul1_sheet.jpg (check: the night shots 7-8 are dark blue but readable, the light from heaven in shots 4-5 does not white out Saul)
 - copy to FINAL VIDEOS\ as "Paul 1 - Saul to Paul - HINDI.mp4"
 - Expect about 15 minutes. Run once, no loop. Report DONE 014.
+
+## 015 - PAUL PART 2 (Hindi only, 1 render). URGENT: posts today 6 PM.
+- Paul2Short (64.7 s, 1940 frames): render `out/paul2_HI.mp4`
+- render flags as always: `--gl=angle --codec=h264 --crf=16 --muted --timeout=240000 --scale=1.3333333333333333` (--concurrency=4 is fine)
+- mux with audio/paul2_HI.m4a -> exports/, AAC re-encode, volume check
+- contact sheet -> reports/paul2_sheet.jpg
+- copy to FINAL VIDEOS\ as "Paul 2 - First Journey - HINDI.mp4"
+- Run once, no loop. Report DONE 015.
