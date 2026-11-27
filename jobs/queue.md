@@ -105,3 +105,11 @@ New series "पौलुस की यात्राएँ" (9 reels, docs/paul
 - contact sheet -> reports/paul2_sheet.jpg
 - copy to FINAL VIDEOS\ as "Paul 2 - First Journey - HINDI.mp4"
 - Run once, no loop. Report DONE 015.
+
+## 016 - ESAU AND THE STEW (Hindi only, 1 render)
+- EsauShort (70.7 s, 2120 frames): render `out/esau_HI.mp4`
+- render flags as always: `--gl=angle --codec=h264 --crf=16 --muted --timeout=240000 --scale=1.3333333333333333` (--concurrency=4 is fine)
+- mux with audio/esau_HI.m4a -> exports/, AAC re-encode, volume check
+- contact sheet -> reports/esau_sheet.jpg
+- copy to FINAL VIDEOS\ as "Esau and the Stew - HINDI.mp4"
+- Run once, no loop. Report DONE 016.
