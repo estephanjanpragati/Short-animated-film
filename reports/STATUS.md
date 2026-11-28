@@ -97,4 +97,6 @@ WORKER READY os=Windows 11 Home 10.0.26300 gpu=NVIDIA GeForce RTX 4060 Laptop GP
   Checks: tower grows tier by tier (~19-20.2 s) OK; view from above (~26-32 s) not blank OK; speech bubbles in the wide shots (~34-35 s) readable.
   ISSUE: ~35.5-36 s the brick speech bubble is cut off by the top edge and the verse tag "11:7-9" sits on top of it; ~36.8-38 s the jug bubble is clipped at the right edge. Needs a framing fix if you want them fully visible. No black frames otherwise.
   Both: sheet and spot frames only; videos not watched in full, audio not listened to. Drive upload not done.
+- DONE 019 babel re-render (replaces 018): duration=62.87s res=1440x2560, render_min=8.13 (487.9 s). Volume mean -17.0 dB / max -1.1. Sheet: reports/babel_sheet.jpg.
+  Fix verified on 10 frames from 35.2 to 38.1 s: brick bubble fully inside the frame; jug and "?" bubbles fully inside; verse tag no longer on the close-ups. Replaced FINAL VIDEOS\Tower of Babel - HINDI.mp4.
 - Jobs 001-008 are done. FINAL VIDEOS\ holds the current EN + HI versions of all three reels. Waiting for new jobs.
