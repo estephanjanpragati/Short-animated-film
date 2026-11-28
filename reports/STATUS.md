@@ -91,4 +91,10 @@ WORKER READY os=Windows 11 Home 10.0.26300 gpu=NVIDIA GeForce RTX 4060 Laptop GP
 - DONE 016 esau (Esau and the Stew, HINDI, EsauShort): duration=70.67s res=1440x2560, render_min=9.31 (558.5 s, 2120 frames). Volume mean -16.9 dB / max -1.1. Sheet: reports/esau_sheet.jpg (35 frames). Copy: FINAL VIDEOS\Esau and the Stew - HINDI.mp4.
   QA: no black frames, Hindi text readable, end card with emoji renders. The scroll and coins hanging in the air (~t=36-40 s) look like an intended symbol. Two things to glance at, probably intentional: ~t=48-60 s the dusk ground is flat blue and can read like water; ~t=64-68 s the bowl sits in front of the tent with nothing under it and looks slightly hovering.
   Only 2-second samples were checked; video not watched in full and audio not listened to. Drive upload not done.
+- DONE 017 paul3 (Lystra, HINDI, Paul3Short): duration=64.27s res=1440x2560, render_min=10.67 (640.3 s, 1928 frames, --concurrency=4). Volume mean -17.3 dB / max -1.0. Sheet: reports/paul3_sheet.jpg. Copy: FINAL VIDEOS\Paul 3 - Lystra - HINDI.mp4.
+  Checks: captions readable in the lower third; bull with garland visible in the priest shot ~22 s (its legs read a bit like a wooden A-frame); Paul lying on the road ~37-40 s is clear. No black frames.
+- DONE 018 babel (Tower of Babel, HINDI, BabelShort): duration=62.87s res=1440x2560, render_min=8.05 (483.3 s, 1886 frames). Volume mean -17.0 dB / max -1.1. Sheet: reports/babel_sheet.jpg. Copy: FINAL VIDEOS\Tower of Babel - HINDI.mp4.
+  Checks: tower grows tier by tier (~19-20.2 s) OK; view from above (~26-32 s) not blank OK; speech bubbles in the wide shots (~34-35 s) readable.
+  ISSUE: ~35.5-36 s the brick speech bubble is cut off by the top edge and the verse tag "11:7-9" sits on top of it; ~36.8-38 s the jug bubble is clipped at the right edge. Needs a framing fix if you want them fully visible. No black frames otherwise.
+  Both: sheet and spot frames only; videos not watched in full, audio not listened to. Drive upload not done.
 - Jobs 001-008 are done. FINAL VIDEOS\ holds the current EN + HI versions of all three reels. Waiting for new jobs.
