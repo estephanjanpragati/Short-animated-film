@@ -113,3 +113,20 @@ New series "पौलुस की यात्राएँ" (9 reels, docs/paul
 - contact sheet -> reports/esau_sheet.jpg
 - copy to FINAL VIDEOS\ as "Esau and the Stew - HINDI.mp4"
 - Run once, no loop. Report DONE 016.
+
+## 017 - PAUL PART 3: LYSTRA (Hindi only, 1 render)
+New: faster cutting (28 shots), moving cameras, burned-in word-by-word Hindi captions.
+- Paul3Short (64.3 s, 1928 frames): render `out/paul3_HI.mp4`
+- render flags as always: `--gl=angle --codec=h264 --crf=16 --muted --timeout=240000 --scale=1.3333333333333333` (--concurrency=4 is fine)
+- mux with audio/paul3_HI.m4a -> exports/, AAC re-encode, volume check
+- contact sheet -> reports/paul3_sheet.jpg (check: captions readable at the bottom third, the bull visible in the priest shot ~22 s, Paul lying on the road ~37-40 s)
+- copy to FINAL VIDEOS\ as "Paul 3 - Lystra - HINDI.mp4"
+- Run once, no loop. Report DONE 017.
+
+## 018 - THE TOWER OF BABEL (Hindi only, 1 render)
+- BabelShort (62.9 s, 1886 frames): render `out/babel_HI.mp4`
+- render flags as always: `--gl=angle --codec=h264 --crf=16 --muted --timeout=240000 --scale=1.3333333333333333` (--concurrency=4 is fine)
+- mux with audio/babel_HI.m4a -> exports/, AAC re-encode, volume check
+- contact sheet -> reports/babel_sheet.jpg (check: the tower grows tier by tier ~18-22 s, the view from above ~26-32 s is not blank, speech bubbles readable ~33-38 s)
+- copy to FINAL VIDEOS\ as "Tower of Babel - HINDI.mp4"
+- Run once, no loop. Report DONE 018.

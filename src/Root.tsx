@@ -11,6 +11,8 @@ import { AbrahamShort, ABRAHAM_FRAMES } from "./videos/abraham/Abraham";
 import { AaronShort, AARON_FRAMES } from "./videos/aaron/Aaron";
 import { Paul1Short, PAUL1_FRAMES } from "./videos/paul1/Paul1";
 import { Paul2Short, PAUL2_FRAMES } from "./videos/paul2/Paul2";
+import { Paul3Short, PAUL3_FRAMES } from "./videos/paul3/Paul3";
+import { BabelShort, BABEL_FRAMES } from "./videos/babel/Babel";
 import { EsauShort, ESAU_FRAMES } from "./videos/esau/Esau";
 export const RemotionRoot: React.FC = () => (
   <>
@@ -24,6 +26,8 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="AaronShort" component={AaronShort} durationInFrames={AARON_FRAMES} fps={30} width={1080} height={1920} defaultProps={{ lang: "en" }} />
     <Composition id="Paul1Short" component={Paul1Short} durationInFrames={PAUL1_FRAMES} fps={30} width={1080} height={1920} />
     <Composition id="Paul2Short" component={Paul2Short} durationInFrames={PAUL2_FRAMES} fps={30} width={1080} height={1920} />
+    <Composition id="Paul3Short" component={Paul3Short} durationInFrames={PAUL3_FRAMES} fps={30} width={1080} height={1920} />
+    <Composition id="BabelShort" component={BabelShort} durationInFrames={BABEL_FRAMES} fps={30} width={1080} height={1920} />
     <Composition id="EsauShort" component={EsauShort} durationInFrames={ESAU_FRAMES} fps={30} width={1080} height={1920} />
     <Composition id="CastSheet" component={CastSheet} durationInFrames={1} fps={30} width={1080} height={1920} />
   </>
