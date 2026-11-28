@@ -636,7 +636,7 @@ export class World {
     this.boat.visible = SETG[s.set] === "harbour";
     { const lv = s.set === "babel" ? towerAt(id, f) : 0;
       this.tiers.forEach((g, i) => { const k = clamp01x(lv - i); g.visible = k > 0.001; g.scale.set(1, Math.max(0.001, k), 1); });
-      this.kilnFire.visible = s.set === "babel"; this.kilnFire.scale.set(1, 1 + 0.2 * Math.sin(t * 11), 1); }
+      this.kilnFire.visible = false; this.kilnFire.scale.set(1, 1 + 0.2 * Math.sin(t * 11), 1); }
     const moving = s.set === "harbour";
     const bp = moving ? boatPos(t) : ([5, SEA_Y, -5] as V3);
     this.boat.position.set(HARB[0] + bp[0], bp[1] + 1.0 + 0.05 * Math.sin(t * 1.6), HARB[2] + bp[2]);

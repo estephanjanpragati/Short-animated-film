@@ -54,8 +54,8 @@ const frames: Framing[] = [
   ["village", "day", LF(3, 16), [-1.4, 1.2, -3], 5.4, { az: -18, el: -0.3, move: "orbit", amt: 22 }], // 8 he leaps and walks
   ["village", "day", LF(4, 0), [0, 1.3, -4.4], 8.5, { az: 0, el: 0.6, move: "orbit", amt: -18 }],        // 9 the crowd: gods have come down
   ["village", "day", LF(4, 8), [0.05, 1.6, -2.5], 4.6, { az: 4, el: 0.1, move: "push", amt: 0.1 }],     // 10 Zeus and Hermes labels
-  ["village", "day", LF(4, 15), [2.6, 1.0, -0.5], 7.2, { az: 12, el: 0.3, move: "truck", amt: -1.6 }],   // 11 priest, bull, garlands
-  ["village", "day", LF(5, 0), [0.05, 1.5, -2.5], 3.7, { az: -6, el: 0.05, move: "push", amt: 0.2 }],   // 12 they tear their clothes
+  ["village", "day", LF(4, 15), [2.5, 1.0, -0.6], 9, { az: 10, el: 0.4, move: "truck", amt: -3.0 }],   // 11 priest, bull, garlands
+  ["village", "day", LF(5, 0), [0.05, 1.45, -2.5], 4.7, { az: -6, el: 0.05, move: "push", amt: 0.2 }],   // 12 they tear their clothes
   ["village", "day", LF(5, 7), [-1.2, 1.2, -2.5], 6, { az: 0, el: 0.3, move: "truck", amt: -1.6 }],     // 13 they rush into the crowd: "stop!"
   ["village", "day", LF(5, 12), [0.5, 1.5, -2.3], 4.4, { az: 20, el: -0.2, move: "orbit", amt: -14 }],  // 14 we are human like you
   ["village", "day", LF(5, 18), [0, 1.3, -3.6], 6.5, { az: 165, el: 0.8, move: "push", amt: 0.1 }],   // 15 the living God (reverse: the crowd)

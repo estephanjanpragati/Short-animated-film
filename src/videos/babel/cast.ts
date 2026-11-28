@@ -301,7 +301,7 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
       break;
     }
     case 6: { // ...and bake them in the fire
-      fxAt(out, "fire" + (f % 4), 300, 400, (p) => fxFire(p, Math.floor(t * 8) / 8, 0.7), point(12, 0.55, -6.9), 0.95, 1.25);
+      fxAt(out, "fire" + (f % 4), 300, 400, (p) => fxFire(p, Math.floor(t * 8) / 8, 0.9), point(12, 0.42, -6.95), 0.62, 0.82);
       for (let k = 0; k < 3; k++) { const u = (t * 0.35 + k / 3) % 1; fxAt(out, "smoke" + Math.round(u * 8), 300, 300, (p) => fxSmoke(p, Math.round(u * 8) / 8), point(12 + 0.3 * k - 0.3, 1.8 + u * 2.4, -8.6), 1.3 + u, 1.3 + u, 0, true); }
       actor(14, workers[4], 13.6, -6.6, { expr: "smile", arms: "open" });
       break;

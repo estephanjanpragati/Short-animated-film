@@ -353,12 +353,12 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
       break;
     }
     case 11: { // the priest of Zeus brings a bull and garlands to sacrifice
-      const x = 4.6 - 3.0 * lin;
-      actor(5, ZPRIEST, x, -0.1, { mode: "march", expr: "grin" }, 0, -1);
-      beast(out, cam, "ox", point(x + 1.9, 0, -1.3), -1, t * 1.1, 1.45);
-      actor(6, townspeople[9], x + 3.4, 0.3, { mode: "march", expr: "smile" }, 0, -1);
-      fxAt(out, "garland", 300, 300, fxGarland, point(x - 0.35, 1.25, 0.05), 0.4, 0.4);
-      fxAt(out, "garland", 300, 300, fxGarland, point(x + 3.05, 1.2, 0.45), 0.38, 0.38);
+      const x = 4.6 - 3.0 * progress;
+      beast(out, cam, "ox", point(x - 1.3, 0, -1.2), -1, t * 1.1, 1.4);
+      actor(5, ZPRIEST, x, -0.3, { mode: "march", expr: "grin" }, 0, -1);
+      actor(6, townspeople[9], x + 1.1, 0.1, { mode: "march", expr: "smile" }, 0, -1);
+      fxAt(out, "garland", 300, 300, fxGarland, point(x - 0.35, 1.25, -0.15), 0.4, 0.4);
+      fxAt(out, "garland", 300, 300, fxGarland, point(x + 0.75, 1.2, 0.25), 0.38, 0.38);
       crowd(7, -3.4, 7, (i) => ({ expr: "grin", arms: "open" }), 4);
       break;
     }
