@@ -508,13 +508,13 @@ export class World {
       for (const [x, z, h] of [[-18, 8, 8], [17, 10, 7.5], [-22, -12, 8.5], [22, -14, 7], [-8, 30, 7], [12, 32, 8]] as const) palm(b, bx + x, bz + z, h, 40 + x);
       for (let i = 0; i < 8; i++) mountain(b, M.rock, bx - 300 + i * 85, bz - 420 - (i % 3) * 60, 40 + (i % 3) * 20, 90, 90 + i);
       // brickworks: stacks of baked bricks, moulds, a domed kiln and a pot of tar
-      for (const [x, z, n] of [[9, -2.5, 4], [10.6, -2.8, 3], [7.4, -6.2, 5], [14.5, -4, 4], [3.6, -14.2, 3], [-3.8, -14, 4]] as const)
+      for (const [x, z, n] of [[6.6, -6.4, 4], [9.8, -6.9, 3], [7.4, -7.6, 5], [14.8, -4.6, 4], [7.6, -15.6, 3], [-3.8, -14.6, 4]] as const)
         for (let k = 0; k < n; k++) box(b, mud, [bx + x, 0.12 + k * 0.24, bz + z], [1.1 - (k % 2) * 0.1, 0.24, 0.7], (k % 2) * 0.1);
       b.add(new THREE.SphereGeometry(1.6, 18, 10, 0, Math.PI * 2, 0, Math.PI / 2), mud, new THREE.Matrix4().makeTranslation(bx + 12, 0, bz - 8.6));
       box(b, tar, [bx + 12, 0.45, bz - 7.05], [0.9, 0.9, 0.12]);
       cyl(b, tar, [bx + 5.2, 0, bz - 15.6], 0.45, 0.35, 0.6, 14);
       cyl(b, M.terra, [bx + 9.6, 0, bz - 5.2], 0.4, 0.3, 0.5, 14);
-      this.kilnFire = new THREE.Mesh(new THREE.SphereGeometry(0.32, 10, 8).scale(1.3, 1, 0.4), new THREE.MeshBasicMaterial({ color: new THREE.Color(5, 2.6, 0.9) }));
+      this.kilnFire = new THREE.Mesh(new THREE.SphereGeometry(0.32, 10, 8).scale(1.3, 1, 0.4), new THREE.MeshBasicMaterial({ color: new THREE.Color(2.6, 1.4, 0.5) }));
       this.kilnFire.position.set(bx + 12, 0.42, bz - 6.95); this.kilnFire.layers.set(NOINK); R.add(this.kilnFire);
       // the tower: seven stepped tiers of mud brick with a front stair, each tier its own group so it can grow
       for (let i = 0; i < TIER_HALF.length; i++) {

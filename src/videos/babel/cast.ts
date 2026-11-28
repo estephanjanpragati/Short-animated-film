@@ -268,7 +268,7 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
     fxAt(out, "bubble" + kind, 320, 240, (p) => fxBubble(p, kind), point(x + dx, y + wob, z + 0.05), size * 1.33 * s, size * s);
   };
   const terrace = (n: number, op: (i: number) => Opts) => {
-    const xs = [-3.6, -2.1, 2.4, 4.0, -5.2, 5.6];
+    const xs = [-5.4, -4.3, -3.2, -2.2, -6.5, 2.6];
     for (let i = 0; i < n; i++) actor(10 + i, workers[i], xs[i], TERR, op(i), TY);
   };
   switch (id) {
@@ -279,15 +279,15 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
     }
     case 2: { // hook: suddenly nobody understands anybody
       terrace(4, (i) => ({ expr: (["shock", "stern", "nervous", "shock"] as const)[i], arms: i % 2 ? "point" : "open" }));
-      const xs = [-3.6, -2.1, 2.4, 4.0];
-      for (let i = 0; i < 4; i++) bubble(i, xs[i], TY + 2.45, TERR, L(1, 7) - 0.15 + i * 0.35, 0.56, i % 2 ? -0.3 : 0.3);
-      if (at(1, 13)) bubble(8, 0.2, TY + 2.6, TERR, L(1, 13), 0.5, 0);
+      const xs = [-5.4, -4.3, -3.2, -2.2];
+      for (let i = 0; i < 4; i++) bubble(i, xs[i], TY + 2.45 + (i % 2) * 0.35, TERR, L(1, 7) - 0.15 + i * 0.35, 0.5, 0);
+      if (at(1, 13)) bubble(8, -3.8, TY + 3.2, TERR, L(1, 13), 0.45, 0);
       break;
     }
     case 3: { // after the flood: one people, one language, travelling together
-      const x = -21 + 9 * lin;
-      for (let i = 0; i < 6; i++) actor(10 + i, i === 0 ? LEADER : workers[i], x - i * 1.15, 22 + (i % 2) * 0.6, { mode: "march", expr: i % 2 ? "smile" : "grin" }, 0, 1);
-      bubble(10, x, 2.5, 22, L(2, 6), 0.6, 0.2);
+      const x = -14.2 + 3 * lin;
+      for (let i = 0; i < 4; i++) actor(10 + i, i === 0 ? LEADER : workers[i], x - i * 0.9, 22 + (i % 2) * 0.5, { mode: "march", expr: i % 2 ? "smile" : "grin" }, 0, 1);
+      bubble(10, x - 0.4, 2.55, 22, L(2, 6), 0.55, 0);
       break;
     }
     case 4: // settled on the plain of Shinar
@@ -303,7 +303,7 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
     case 6: { // ...and bake them in the fire
       fxAt(out, "fire" + (f % 4), 300, 400, (p) => fxFire(p, Math.floor(t * 8) / 8, 0.7), point(12, 0.55, -6.9), 0.95, 1.25);
       for (let k = 0; k < 3; k++) { const u = (t * 0.35 + k / 3) % 1; fxAt(out, "smoke" + Math.round(u * 8), 300, 300, (p) => fxSmoke(p, Math.round(u * 8) / 8), point(12 + 0.3 * k - 0.3, 1.8 + u * 2.4, -8.6), 1.3 + u, 1.3 + u, 0, true); }
-      actor(14, workers[4], 13.9, -7.3, { expr: "smile", arms: "open" });
+      actor(14, workers[4], 13.6, -6.6, { expr: "smile", arms: "open" });
       break;
     }
     case 7: { // brick instead of stone, tar instead of mortar: the first course
@@ -320,13 +320,13 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
       break;
     case 10: { // "let us make a name for ourselves"
       actor(0, LEADER, 0, -13.2, { expr: "laugh", arms: "open" });
-      for (let i = 0; i < 8; i++) { const sx = i % 2 ? 1 : -1, k = Math.floor(i / 2); facing(10 + i, workers[i], sx * (2.2 + k * 0.9), -11.2 + k * 0.7, [-sx, -0.6], { expr: i % 3 ? "grin" : "laugh", arms: "open" }); }
+      for (let i = 0; i < 8; i++) { const sx = i % 2 ? 1 : -1, k = Math.floor(i / 2); facing(10 + i, workers[i], sx * (1.0 + k * 0.55), -11.6 + k * 0.55, [-sx, -0.6], { expr: i % 3 ? "grin" : "laugh", arms: "open" }); }
       sparkles(out, t, point(0, 2.7, -13));
       break;
     }
     case 11: break; // the high, wide view of the one crowded spot
     case 12: { // the LORD came down to see: through the clouds
-      for (let k = 0; k < 5; k++) { const y = 70 + k * 26, a = k * 1.9; fxAt(out, "cloudpuff", 300, 300, (p) => fxSmoke(p, 0), point(Math.cos(a) * 9, y, TZ + Math.sin(a) * 9), 36, 36, 0, true); }
+      for (let k = 0; k < 3; k++) { const y = 135 + k * 18, a = k * 2.1; fxAt(out, "cloudpuff", 300, 300, (p) => fxSmoke(p, 0.35), point(Math.cos(a) * 14, y, TZ + Math.sin(a) * 14), 30, 30, 0, true); }
       break;
     }
     case 13:
@@ -338,18 +338,18 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
       break;
     case 15: { // he confused their language
       terrace(4, (i) => ({ expr: at(7, 5) ? (["shock", "stern", "nervous", "dazed"][i] as Opts["expr"]) : "smile", arms: i % 2 ? "point" : "open" }));
-      const xs = [-3.6, -2.1, 2.4, 4.0];
-      for (let i = 0; i < 4; i++) bubble(i + 1, xs[i], TY + 2.45, TERR, L(7, 3) + i * 0.3, 0.56, i % 2 ? -0.3 : 0.3);
+      const xs = [-5.4, -4.3, -3.2, -2.2];
+      for (let i = 0; i < 4; i++) bubble(i + 1, xs[i], TY + 2.45 + (i % 2) * 0.35, TERR, L(7, 3) + i * 0.3, 0.5, 0);
       break;
     }
     case 16: // one asks for a brick
       terrace(2, (i) => ({ expr: i === 0 ? "grin" : "neutral", arms: i === 0 ? "point" : undefined }));
-      bubble(6, -3.6, TY + 2.45, TERR, L(7, 9) - 0.1, 0.6, 0.35);
+      bubble(6, -5.4, TY + 2.45, TERR, L(7, 9) - 0.1, 0.6, 0.2);
       break;
     case 17: { // the other brings something else entirely
       terrace(2, (i) => ({ expr: i === 0 ? (at(7, 15) ? "stern" : "shock") : "smile", arms: i === 0 ? "cross" : "open" }));
-      bubble(7, -2.1, TY + 2.45, TERR, L(7, 12), 0.6, 0.35);
-      if (at(7, 15)) { bubble(8, -3.6, TY + 2.45, TERR, L(7, 15), 0.55, -0.3); fxAt(out, "vein", 200, 200, fxVein, point(-3.3, TY + 1.95, TERR + 0.1), 0.22, 0.22); }
+      bubble(7, -4.3, TY + 2.45, TERR, L(7, 12), 0.55, 0.15);
+      if (at(7, 15)) { bubble(8, -5.4, TY + 2.75, TERR, L(7, 15), 0.5, -0.1); fxAt(out, "vein", 200, 200, fxVein, point(-5.15, TY + 1.95, TERR + 0.1), 0.22, 0.22); }
       break;
     }
     case 18: // the work stopped
