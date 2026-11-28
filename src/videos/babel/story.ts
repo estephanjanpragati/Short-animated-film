@@ -65,8 +65,8 @@ const frames: Framing[] = [
   ["babel", "day", LF(6, 7), [0, 10, TZ], 10, { az: 40, el: 75, move: "orbit", amt: 50 }],                  // 13 the "sky-high" tower, from above
   ["babel", "day", LF(6, 14), [-3.8, 8.4, TERR], 7.8, { az: -8, el: -0.9, move: "push", amt: 0.1 }],           // 14 God had to come down
   ["babel", "day", LF(7, 0), [-3.8, 8.1, TERR], 7.6, { az: 12, el: 0.4, move: "orbit", amt: -16 }],            // 15 he confused their language
-  ["babel", "day", LF(7, 8), [-5.3, 8.3, TERR], 3.0, { az: 20, el: 0.1, move: "push", amt: 0.12 }],         // 16 one asks for a brick
-  ["babel", "day", LF(7, 11), [-4.85, 8.2, TERR], 4.2, { az: -12, el: 0.1, move: "push", amt: 0.1 }],         // 17 the other understands something else
+  ["babel", "day", LF(7, 8), [-5.1, 8.55, TERR], 3.8, { az: 14, el: 0.1, move: "push", amt: 0.1 }],         // 16 one asks for a brick
+  ["babel", "day", LF(7, 11), [-4.85, 8.5, TERR], 5.4, { az: -6, el: 0.1, move: "push", amt: 0.08 }],         // 17 the other understands something else
   ["babel", "day", LF(7, 17), [0, 8, TZ], 26, { az: 38, el: 3, move: "pull", amt: 0.12 }],                  // 18 the work stopped
   ["babel", "golden", LF(8, 0), [0, 0, -6], 42, { az: 0, el: 26, move: "rise", amt: 8 }],                   // 19 scattered over the earth
   ["babel", "storm", LF(8, 6), [0, 11, TZ], 50, { az: -20, el: 0, move: "pull", amt: 0.12 }],               // 20 its name: Babel, confusion

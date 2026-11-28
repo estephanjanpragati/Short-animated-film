@@ -344,12 +344,12 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
     }
     case 16: // one asks for a brick
       terrace(2, (i) => ({ expr: i === 0 ? "grin" : "neutral", arms: i === 0 ? "point" : undefined }));
-      bubble(6, -5.4, TY + 2.45, TERR, L(7, 9) - 0.1, 0.6, 0.2);
+      bubble(6, -5.4, TY + 2.3, TERR, L(7, 9) - 0.1, 0.48, 0.32);
       break;
     case 17: { // the other brings something else entirely
       terrace(2, (i) => ({ expr: i === 0 ? (at(7, 15) ? "stern" : "shock") : "smile", arms: i === 0 ? "cross" : "open" }));
-      bubble(7, -4.3, TY + 2.45, TERR, L(7, 12), 0.55, 0.15);
-      if (at(7, 15)) { bubble(8, -5.4, TY + 2.75, TERR, L(7, 15), 0.5, -0.1); fxAt(out, "vein", 200, 200, fxVein, point(-5.15, TY + 1.95, TERR + 0.1), 0.22, 0.22); }
+      bubble(7, -4.3, TY + 2.35, TERR, L(7, 12), 0.5, -0.1);
+      if (at(7, 15)) { bubble(8, -5.4, TY + 2.4, TERR, L(7, 15), 0.45, 0.05); fxAt(out, "vein", 200, 200, fxVein, point(-5.15, TY + 1.95, TERR + 0.1), 0.22, 0.22); }
       break;
     }
     case 18: // the work stopped

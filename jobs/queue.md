@@ -130,3 +130,9 @@ New: faster cutting (28 shots), moving cameras, burned-in word-by-word Hindi cap
 - contact sheet -> reports/babel_sheet.jpg (check: the tower grows tier by tier ~18-22 s, the view from above ~26-32 s is not blank, speech bubbles readable ~33-38 s)
 - copy to FINAL VIDEOS\ as "Tower of Babel - HINDI.mp4"
 - Run once, no loop. Report DONE 018.
+
+## 019 - TOWER OF BABEL re-render (replaces 018)
+Fixed: the brick bubble (~35.5-36 s) is no longer cut by the top edge or covered by the verse tag; the jug and "?" bubbles (~36.8-38 s) sit fully inside the frame.
+- BabelShort (62.9 s, 1886 frames): render `out/babel_HI.mp4`, same flags as 018, mux with audio/babel_HI.m4a (unchanged), volume check
+- contact sheet -> reports/babel_sheet.jpg (check 35-38 s: both bubbles fully visible)
+- REPLACE "Tower of Babel - HINDI.mp4" in FINAL VIDEOS\ (the 018 file has the clipped bubbles). Run once, no loop. Report DONE 019.

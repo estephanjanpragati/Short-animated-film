@@ -131,7 +131,7 @@ const Captions: React.FC<{ until: number; from: number }> = ({ until, from }) =>
 const Overlays: React.FC = () => {
   const f = useCurrentFrame();
   const hook = pop(f, -10, FLASH_AT + 2);
-  const spans: [number, number][] = [[LF(4, 0), LF(5, 0)], [LF(6, 0), LF(6, 14)], [LF(7, 0), LF(8, 0)], [LF(9, 6), LF(10, 0)]];
+  const spans: [number, number][] = [[LF(4, 0), LF(5, 0)], [LF(6, 0), LF(6, 14)], [LF(7, 0), LF(7, 8)], [LF(9, 6), LF(10, 0)]];
   const endAt = LF(11, 11);
   const babel = pop(f, LF(8, 11), LF(9, 0));
   const end = pop(f, endAt, TOTAL + 20);
